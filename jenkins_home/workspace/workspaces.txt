@@ -1,2 +1,0 @@
-chrome-extension-webpack-boilerplate/feature%2Fpipeline
-ack-boilerplate_feature_pipeline

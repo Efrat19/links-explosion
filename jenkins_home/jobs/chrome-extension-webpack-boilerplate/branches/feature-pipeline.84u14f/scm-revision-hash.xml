@@ -1,7 +1,0 @@
-<?xml version='1.1' encoding='UTF-8'?>
-<jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl plugin="git@3.10.0">
-  <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.5.3">
-    <name>feature/pipeline</name>
-  </head>
-  <hash>19c9db97c38c18cc54158bdb848a9c3c843c419f</hash>
-</jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl>
