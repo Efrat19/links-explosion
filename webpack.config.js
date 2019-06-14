@@ -21,8 +21,7 @@ if (fileSystem.existsSync(secretsPath)) {
 var options = {
   mode: process.env.NODE_ENV || "development",
   entry: {
-    popup: path.join(__dirname, "src", "js", "popup.js"),
-    options: path.join(__dirname, "src", "js", "options.js"),
+    content: path.join(__dirname, "src", "js", "content.js"),
     background: path.join(__dirname, "src", "js", "background.js")
   },
   output: {
@@ -41,11 +40,11 @@ var options = {
         loader: "file-loader?name=[name].[ext]",
         exclude: /node_modules/
       },
-      {
-        test: /\.html$/,
-        loader: "html-loader",
-        exclude: /node_modules/
-      }
+      // {
+      //   test: /\.html$/,
+      //   loader: "html-loader",
+      //   exclude: /node_modules/
+      // }
     ]
   },
   resolve: {
@@ -67,21 +66,21 @@ var options = {
         }))
       }
     }]),
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "popup.html"),
-      filename: "popup.html",
-      chunks: ["popup"]
-    }),
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "options.html"),
-      filename: "options.html",
-      chunks: ["options"]
-    }),
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "background.html"),
-      filename: "background.html",
-      chunks: ["background"]
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: path.join(__dirname, "src", "popup.html"),
+    //   filename: "popup.html",
+    //   chunks: ["popup"]
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: path.join(__dirname, "src", "options.html"),
+    //   filename: "options.html",
+    //   chunks: ["options"]
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: path.join(__dirname, "src", "background.html"),
+    //   filename: "background.html",
+    //   chunks: ["background"]
+    // }),
     new WriteFilePlugin()
   ]
 };

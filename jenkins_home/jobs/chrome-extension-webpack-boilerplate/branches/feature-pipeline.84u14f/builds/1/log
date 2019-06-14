@@ -1,0 +1,84 @@
+Branch indexing
+[8mha:////4MqWvWnsBwezumP2fowGT6XY9cT5TwPtVIadQcRxt5Y4AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHR26ORgCQArCrVOjgAAAA==[0mConnecting to https://api.github.com using jenkins_admin/****** (GitHub Access Token)
+ERROR: Could not do lightweight checkout, falling back to heavyweight
+sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
+Caused: sun.security.validator.ValidatorException: PKIX path building failed
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
+	at sun.security.validator.Validator.validate(Validator.java:262)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621)
+Caused: javax.net.ssl.SSLHandshakeException
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1946)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:316)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:310)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1639)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
+	at com.squareup.okhttp.internal.io.RealConnection.connectTls(RealConnection.java:192)
+	at com.squareup.okhttp.internal.io.RealConnection.connectSocket(RealConnection.java:149)
+	at com.squareup.okhttp.internal.io.RealConnection.connect(RealConnection.java:112)
+	at com.squareup.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:184)
+	at com.squareup.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:126)
+	at com.squareup.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:95)
+	at com.squareup.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:281)
+	at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:224)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:450)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:399)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:236)
+	at com.squareup.okhttp.internal.huc.DelegatingHttpsURLConnection.getInputStream(DelegatingHttpsURLConnection.java:210)
+	at com.squareup.okhttp.internal.huc.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:25)
+	at org.kohsuke.github.Requester.asStream(Requester.java:340)
+	at org.kohsuke.github.GHContent.read(GHContent.java:117)
+	at org.jenkinsci.plugins.github_branch_source.GitHubSCMFile.content(GitHubSCMFile.java:183)
+	at jenkins.scm.api.SCMFile.contentAsString(SCMFile.java:338)
+	at org.jenkinsci.plugins.workflow.multibranch.SCMBinder.create(SCMBinder.java:107)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:293)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Checking out git https://github.com/Efrat19/chrome-extension-webpack-boilerplate.git into /var/jenkins_home/workspace/ack-boilerplate_feature_pipeline@script to read Jenkinsfile
+using credential github
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/Efrat19/chrome-extension-webpack-boilerplate.git
+ > git init /var/jenkins_home/workspace/ack-boilerplate_feature_pipeline@script # timeout=10
+Fetching upstream changes from https://github.com/Efrat19/chrome-extension-webpack-boilerplate.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --force --progress https://github.com/Efrat19/chrome-extension-webpack-boilerplate.git +refs/heads/feature/pipeline:refs/remotes/origin/feature/pipeline
+ERROR: Error cloning remote repo 'origin'
+hudson.plugins.git.GitException: Command "git fetch --no-tags --force --progress https://github.com/Efrat19/chrome-extension-webpack-boilerplate.git +refs/heads/feature/pipeline:refs/remotes/origin/feature/pipeline" returned status code 128:
+stdout: 
+stderr: fatal: unable to access 'https://github.com/Efrat19/chrome-extension-webpack-boilerplate.git/': SSL certificate problem: unable to get local issuer certificate
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2042)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandWithCredentials(CliGitAPIImpl.java:1761)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.access$400(CliGitAPIImpl.java:72)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$1.execute(CliGitAPIImpl.java:442)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$2.execute(CliGitAPIImpl.java:655)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1152)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1192)
+	at org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:124)
+	at org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition.create(CpsScmFlowDefinition.java:144)
+	at org.jenkinsci.plugins.workflow.multibranch.SCMBinder.create(SCMBinder.java:142)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:293)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+ERROR: Error cloning remote repo 'origin'
+
+GitHub has been notified of this commit’s build result
+
+ERROR: Maximum checkout retry attempts reached, aborting
+Finished: FAILURE
