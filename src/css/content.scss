@@ -12,18 +12,18 @@
 	90% { transform: translate(1px, 2px) rotate(0deg); }
 	100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
-@keyframes explode {
-	0% { transform: translate(0,0) rotate(0deg); }
-	80% { transform: translate(random(500)+px,random(500)+px) rotate(random(45)+deg); }
-	100% { transform: translate(0,0) rotate(0deg); }
-  }
+// @keyframes explode {
+// 	0% { transform: translate(0,0) rotate(0deg); }
+// 	80% { transform: translate(random(500)+px,random(500)+px) rotate(random(45)+deg); }
+// 	100% { transform: translate(0,0) rotate(0deg); }
+//   }
   .shake{
 	display:inline-block;
 	animation: shake 0.5s;
 	animation-iteration-count: infinite;
   }
-  .explode{
-	display:inline-block;
-	animation: explode 1s;
-	animation-iteration-count: infinite;
-  }
+//   .explode{
+// 	display:inline-block;
+// 	animation: explode 1s;
+// 	animation-iteration-count: infinite;
+//   }
