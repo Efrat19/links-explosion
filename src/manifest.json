@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "Explode",
-  "description": "open multiple links",
+  "description": "open multiple links at once",
   "version": "1.0",
-  "homepage_url": "https://github.com/dvidsilva/chrome-ext-sample",
+  "homepage_url": "https://github.com/Efrat19/explode-chrome-ext.git",
   "browser_action": {
       "default_icon": "128.png"
   },
