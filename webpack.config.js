@@ -21,7 +21,10 @@ if (fileSystem.existsSync(secretsPath)) {
 var options = {
   mode: process.env.NODE_ENV || "development",
   entry: {
-    content: path.join(__dirname, "src", "js", "content.js"),
+    content: [
+      path.join(__dirname, "src", "js", "content.js"),
+      path.join(__dirname, "src", "css", "content.scss")
+    ],
     background: path.join(__dirname, "src", "js", "background.js")
   },
   output: {
@@ -35,6 +38,14 @@ var options = {
         loader: "style-loader!css-loader",
         exclude: /node_modules/
       },
+      {
+        test: /\.scss$/,
+        use: [
+            "style-loader", // creates style nodes from JS strings
+            "css-loader", // translates CSS into CommonJS
+            "sass-loader" // compiles Sass to CSS, using Node Sass by default
+        ]
+    },
       {
         test: new RegExp('\.(' + fileExtensions.join('|') + ')$'),
         loader: "file-loader?name=[name].[ext]",
@@ -67,14 +78,9 @@ var options = {
       }
     }]),
     // new HtmlWebpackPlugin({
-    //   template: path.join(__dirname, "src", "popup.html"),
-    //   filename: "popup.html",
-    //   chunks: ["popup"]
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: path.join(__dirname, "src", "options.html"),
-    //   filename: "options.html",
-    //   chunks: ["options"]
+    //   template: path.join(__dirname, "src", "content.html"),
+    //   filename: "content.html",
+    //   chunks: ["content"]
     // }),
     // new HtmlWebpackPlugin({
     //   template: path.join(__dirname, "src", "background.html"),
