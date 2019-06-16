@@ -1,5 +1,5 @@
 # explode-chrome-ext
 chrome extension that allows you to open multiple links at once
 ---
-![demo.gif](demo.gif =100)
+![dome.gif](demo.gif =50x)
 #enjoy and dont forget to :star:!
