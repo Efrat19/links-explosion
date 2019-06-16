@@ -33,11 +33,9 @@ function onselectEnd(selected) {
     cm.unmask();
     ds.break();
     elem.parentNode && elem.parentNode.removeChild(elem);
-  setTimeout(()=>{
         selected.forEach((link,index) =>{
             window.open(link.href, '_blank');
         });
-    },800)
 }
     ds.callback = onselectEnd;
 });
