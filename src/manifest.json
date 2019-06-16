@@ -3,7 +3,7 @@
   "name": "Explode",
   "description": "open multiple links at once",
   "version": "1.0",
-  "homepage_url": "https://efrat19.github.io/explode-chrome-ext/",
+  "homepage_url": "https://github.com/Efrat19/explode-chrome-ext",
   "browser_action": {
       "default_icon": "128.png"
   },
