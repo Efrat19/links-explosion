@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Links-Explosion",
   "description": "open multiple links at once",
-  "version": "1.0",
+  "version": "1.1",
   "homepage_url": "https://github.com/Efrat19/explode-chrome-ext",
   "browser_action": {
       "default_icon": "128.png"
