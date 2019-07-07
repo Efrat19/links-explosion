@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 1,
   "name": "Links-Explosion",
   "description": "open multiple links at once",
   "version": "1.0",
@@ -25,5 +25,6 @@
   "permissions": [
       "activeTab"
   ],
-  "content_security_policy": "script-src 'unsafe-eval' 'self'; object-src 'self' 'unsafe-eval';"
+  "content_security_policy": "script-src 'unsafe-eval' 'self'; object-src 'self' 'unsafe-eval';",
+  "update_url": ""
 }
