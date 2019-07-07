@@ -26,5 +26,4 @@
       "activeTab"
   ],
   "content_security_policy": "script-src 'unsafe-eval' 'self'; object-src 'self' 'unsafe-eval';",
-  "update_url": "https://efrat19.github.io/links-explosion/update.xml"
 }
