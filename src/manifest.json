@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Links-Explosion",
   "description": "open multiple links at once",
   "version": "1.0",
