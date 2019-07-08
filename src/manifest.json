@@ -25,5 +25,5 @@
   "permissions": [
       "activeTab"
   ],
-  "content_security_policy": "script-src 'unsafe-eval' 'self'; object-src 'self' 'unsafe-eval';",
+  "content_security_policy": "script-src 'unsafe-eval' 'self'; object-src 'self' 'unsafe-eval';"
 }
