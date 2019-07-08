@@ -9,7 +9,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'npm i'
-                sh 'npm tun build'
+                sh 'npm run build'
             }
         }
     }
