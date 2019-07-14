@@ -1,13 +1,15 @@
-<img src="logo.png" alt="logo" width="250"/>
+<img src="logo.png" alt="logo" width="150"/>
 
 # explode-chrome-ext
 chrome extension that allows you to open multiple links at once
 
 ---
-<img src="demo.gif" alt="demo" width="450"/>
+<img src="demo.gif" alt="demo" width="350"/>
 
 ---
 
 ### enjoy:smile:
+
+<a href='https://chrome.google.com/webstore/detail/links-explosion/kdnmggehdjcfnnfcahgboaajcphahnmk' target='_blank'>view on webstore</a>
 
 <a href='https://ko-fi.com/C0C5Y5NJ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
