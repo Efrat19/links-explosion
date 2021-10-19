@@ -1,5 +1,6 @@
 # explode-chrome-ext
 chrome extension that allows you to open multiple links at once
+![demo](./demo.gif)
 
 <a href='https://chrome.google.com/webstore/detail/links-explosion/kdnmggehdjcfnnfcahgboaajcphahnmk' target='_blank'><img src='https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png'  alt='view on chrome webstore'/></a>
 
