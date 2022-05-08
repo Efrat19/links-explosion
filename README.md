@@ -2,7 +2,7 @@
 chrome extension that allows you to open multiple links at once
 ![demo](./demo.gif)
 
-<a href='https://chrome.google.com/webstore/detail/links-explosion/kdnmggehdjcfnnfcahgboaajcphahnmk' target='_blank'><img src='https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png'  alt='view on chrome webstore'/></a>
+<a href='https://chrome.google.com/webstore/detail/links-explosion/kdnmggehdjcfnnfcahgboaajcphahnmk' target='_blank'><img src='https://lh3.googleusercontent.com/p1jPnLQM0kW8qrZUlusrPMwR9dXhyqR1Azg_eAqoBhTwGtmtSYGCyMwSlJzr3KSVbnSegeef5mZe2MCdrYOqztNo=w128-h128-e365-rj-sc0x00ffffff'  alt='view on chrome webstore'/></a>
 
 ### enjoy:smile:
 
